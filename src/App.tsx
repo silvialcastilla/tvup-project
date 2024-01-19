@@ -1,19 +1,15 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Routes, Route } from 'react-router-dom';
+import { PokemonDetail } from './Presentation/Views/Products/Detail/PokemonDetail';
+import { PokemonList } from './Presentation/Views/Products/List/PokemonList';
 
 function App() {
-  const sumNum = (num1: number, num2: number) => {
 
-    const result = num1+num2;
-
-    return result;
-
-  }
   return (
-    <div className="App">
-      <div>{sumNum(1,2)}</div>
-    </div>
+    <Routes>
+      <Route path='/' element={<PokemonList />} />
+      <Route path='/detail/:id' element={<PokemonDetail />} />
+    </Routes>
   );
 }
 
