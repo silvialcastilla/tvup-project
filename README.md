@@ -1,46 +1,25 @@
-# Getting Started with Create React App
+# Prueba técnica - TVUP 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+La prueba técnica consistirá en desarrollar una aplicación web con dos vistas: una
+página principal que mostrará una lista de Pokémon y una página de detalle para
+cada Pokémon específico. Utilizaremos el endpoint de la API web de Pokémon
+( https://pokeapi.co/ ) para obtener la información necesaria.
 
-## Available Scripts
+## Descripción del problema
 
-In the project directory, you can run:
+### Página Principal:
+1. La página principal debe mostrar una lista de Pokémon de máximo 10
+elementos. Cada elemento de la lista debe incluir al menos el nombre y el
+número del Pokémon.
+2. Al hacer clic en un Pokémon de la lista, el usuario deberá ser redirigido a la
+página de detalle correspondiente.
 
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Página de Detalle:
+1. La página de detalle debe mostrar información más detallada sobre el
+Pokémon seleccionado:
+- Nombre: name
+- Imagen: sprintes.other.home.front_default
+- Listado de habilidades: abilities[:].ability.name
+2. Posiciona nombre y listado a la izquierda y la imagen a la derecha.
+3. Proporciona una manera de regresar a la página principal desde la página de
+detalle.
