@@ -1,0 +1,12 @@
+@use '../../../StylesVariables/Colors.scss' as c;
+@use '../../../StylesVariables/Sizes.scss' as s;
+
+.title{
+    background-image: url('../../../Assets/pokemon-background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: c.$white-shadow;
+    padding: s.$margin-title-and-image 0px s.$margin-title-and-image 0px;
+    text-align: center;
+    margin: 0px
+}

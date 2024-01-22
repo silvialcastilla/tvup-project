@@ -1,4 +1,3 @@
-import React from 'react';
 import { Routes, Route, BrowserRouter } from 'react-router-dom';
 import { PokemonList } from './Presentation/Views/Pokemons/List/PokemonList';
 import { PokemonDetail } from './Presentation/Views/Pokemons/Detail/PokemonDetail';

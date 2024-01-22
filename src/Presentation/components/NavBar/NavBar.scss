@@ -1,0 +1,16 @@
+@use '../../../StylesVariables/Colors.scss' as c;
+@use '../../../StylesVariables/Sizes.scss' as s;
+
+.nav-bar{
+    align-items: center;
+    background: c.$gradient_background;
+    display: flex;
+    justify-content: center;
+    margin: 0px;
+
+    &-img{
+        margin-top: s.$margin_boxes;
+        margin-bottom: s.$margin_boxes;
+    }    
+}
+

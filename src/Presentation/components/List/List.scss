@@ -1,0 +1,49 @@
+@use '../../../StylesVariables/Colors.scss' as c;
+@use '../../../StylesVariables/Sizes.scss' as s;
+@use '../../../StylesVariables/Fonts.scss' as f;
+@use '../../../StylesVariables/Mixins.scss' as m;
+
+.list {
+    padding: s.$padding_boxes;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+
+    &-items {
+        @include m.card;
+        align-items: center;
+        background: c.$gradient_background;
+        border-radius: 10px;
+        color: white;
+        cursor: pointer;
+        display: flex;
+        font-size: 20px;
+        justify-content: space-between;
+        margin: 10px;
+        padding: 10px;
+        transition:
+        background 0.5s  ease-in-out,
+        font-size  0.5s  ease-in-out;        
+        width: 40%;
+
+
+        &-h4{
+            padding: 5px!important;
+            margin-left: 30px;
+        }
+
+        &-p{
+            font-family: f.$title_pokemon;
+            font-weight: bold;
+            margin-right: 30px;
+        }
+        
+    }
+    &-items:hover {
+        background: c.$light_green;
+        color:  c.$grey-boxes ;
+        font-size: 25px;
+    }  
+}
+

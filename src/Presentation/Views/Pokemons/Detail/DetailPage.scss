@@ -1,0 +1,71 @@
+@use '../../../../StylesVariables/Colors.scss' as c;
+@use '../../../../StylesVariables/Fonts.scss' as f;
+
+.detailpage {
+
+    &-details {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        padding: 30px;
+
+        &-info {
+        
+            &-h3 {
+                color: c.$light_green;
+                font-size: 40px;
+                animation-duration: 3s;
+                animation-name: slidetitle;
+                margin-bottom: 5px;
+            }
+    
+            &-p {
+                font-size: 24px;
+                font-family: f.$text;
+                font-weight: bold;
+            }
+    
+            &-ul {
+                list-style: none;
+                padding: 0px;
+                margin-left: 10px;
+                }
+                
+                &-li{
+                    font-size: 22px; 
+                    font-family: f.$text;   
+                }
+
+                ul li::before {
+                content: "\2022";  
+                color: c.$light_green; 
+                display: inline-block; 
+                padding-right: 10px;
+                font-size: 50px;
+                line-height: 25px;
+                vertical-align: -11px;
+                width: 15px;
+                
+                }
+            
+        }
+    }
+
+
+   
+
+    @keyframes slidetitle {
+        from {
+            margin-left: 100%;
+            width: 300%;
+        }
+
+        to {
+            margin-left: 0%;
+            width: 100%;
+        }
+    }
+
+
+}

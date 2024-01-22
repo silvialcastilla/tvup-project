@@ -1,12 +1,10 @@
 import { createContainer, asFunction, asValue } from 'awilix'
-import PokemonListViewModel from '../Presentation/Views/Pokemons/List/ViewModel';
-import DetailsViewModel from '../Presentation/Views/Pokemons/Detail/ViewModel';
 import { GetPokemonsUseCase } from '../Domain/UseCase/Pokemon/GetPokemons';
-import * as PokemonDataSource from '../Data/DataSource/PokemonDataSource'
-import { PokemonRepository } from '../Data/Repository/PokemonRepository';
-import PokemonDetailViewModel from '../Presentation/Views/Pokemons/Detail/ViewModel';
 import { GetPokemonUseCase } from '../Domain/UseCase/Pokemon/GetPokemon';
-
+import { PokemonRepository } from '../Data/Repository/PokemonRepository';
+import * as PokemonDataSource from '../Data/DataSource/PokemonDataSource'
+import PokemonDetailViewModel from '../Presentation/Views/Pokemons/Detail/ViewModel';
+import PokemonListViewModel from '../Presentation/Views/Pokemons/List/ViewModel';
 
 const container = createContainer();
 

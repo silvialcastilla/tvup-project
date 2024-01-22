@@ -1,0 +1,21 @@
+@use '../../../StylesVariables/Colors.scss' as c;
+@use '../../../StylesVariables/Fonts.scss' as f;
+@use '../../../StylesVariables/Sizes.scss' as s;
+
+.buttonback {
+    border: 0px;
+    background-color: aliceblue;
+    
+    &-container {
+        display: flex;
+        align-items: center;
+        font-size: 15px;
+        font-weight: bold;
+    }
+    
+    img{
+        height: 30px;
+        width: 30px;
+    }
+}
+

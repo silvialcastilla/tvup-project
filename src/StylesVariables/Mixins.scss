@@ -1,0 +1,6 @@
+@use './Colors.scss' as c;
+
+@mixin card {
+    background: c.$gradient_background;
+    box-shadow:  16px 19px 48px 0px -21px rgba(0,0,0,0.90);
+}
