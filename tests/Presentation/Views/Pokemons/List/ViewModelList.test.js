@@ -1,3 +1,8 @@
+/**
+ * @jest-environment jsdom
+ */
+
+
 import 'regenerator-runtime/runtime'
 import { renderHook, act } from '@testing-library/react-hooks';
 import PokemonListViewModel from '../../../../../src/Presentation/Views/Pokemons/List/ViewModel';
@@ -5,6 +10,8 @@ import PokemonListViewModel from '../../../../../src/Presentation/Views/Pokemons
 const mockGetPokemonsUseCase = {
     execute: jest.fn()
 };
+
+
 
 describe('PokemonListViewModel', () => {
     let vm;

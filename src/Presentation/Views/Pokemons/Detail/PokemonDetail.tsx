@@ -5,7 +5,7 @@ import ButtonBack from '../../../components/ButtonBack/ButtonBack';
 import DI from '../../../../DI/ioc'
 import ImagePokemon from '../../../components/ImagePokemon/ImagePokemon';
 
-import './DetailPage.scss'
+import './PokemonDetail.scss'
 
 export const PokemonDetail = () => {
   let navigate = useNavigate();
@@ -14,6 +14,7 @@ export const PokemonDetail = () => {
 
   useEffect(() => {
      getPokemon(id)
+     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
   return (
