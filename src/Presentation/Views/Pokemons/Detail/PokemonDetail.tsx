@@ -38,7 +38,7 @@ export const PokemonDetail = () => {
           </ul>
         </div>
         <div className="detailpage-details-img">
-          <ImagePokemon urlImage={image} />
+          {image === "" ? <p>Cargando...</p> : <ImagePokemon urlImage={image} /> }
         </div>
       </div>
     </div>
