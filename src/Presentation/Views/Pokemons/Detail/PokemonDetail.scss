@@ -1,52 +1,52 @@
 @use '../../../../StylesVariables/Colors.scss' as c;
 @use '../../../../StylesVariables/Fonts.scss' as f;
+@use '../../../../StylesVariables/Sizes.scss' as s;
 
 .detailpage {
 
     &-details {
+        align-items: center;
         display: flex;
         flex-direction: row;
-        align-items: center;
         justify-content: space-evenly;
-        padding: 30px;
+        padding: s.$big_size;
 
         &-info {
         
             &-h3 {
-                color: c.$light_green;
-                font-size: 40px;
                 animation-duration: 3s;
                 animation-name: slidetitle;
-                margin-bottom: 5px;
+                color: c.$light_green;
+                font-size: s.$big_size + 10px;
+                margin-bottom: s.$margin_little;
             }
     
             &-p {
-                font-size: 24px;
                 font-family: f.$text;
+                font-size: s.$big_size - 5px;
                 font-weight: bold;
             }
     
             &-ul {
                 list-style: none;
-                padding: 0px;
                 margin-left: 10px;
+                padding: 0px;
                 }
                 
                 &-li{
-                    font-size: 22px; 
                     font-family: f.$text;   
+                    font-size: 22px; 
                 }
 
                 ul li::before {
                 content: "\2022";  
                 color: c.$light_green; 
                 display: inline-block; 
-                padding-right: 10px;
-                font-size: 50px;
-                line-height: 25px;
+                font-size: s.$big_size_before;
+                line-height: s.$big_size;
+                padding-right: s.$padding_boxes;
                 vertical-align: -11px;
-                width: 15px;
-                
+                width: s.$medium_size;
                 }
             
         }

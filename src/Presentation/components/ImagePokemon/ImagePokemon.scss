@@ -1,7 +1,8 @@
 @use '../../../StylesVariables/Colors.scss' as c;
 @use '../../../StylesVariables/Fonts.scss' as f;
-@use '../../../StylesVariables/Sizes.scss' as s;
 @use '../../../StylesVariables/Mixins.scss' as m;
+@use '../../../StylesVariables/Sizes.scss' as s;
+
 
 .imagepokemon {
     border-radius: 40px;
@@ -9,20 +10,20 @@
    
     
     &-img{
-        height: 500px;
-        width: 500px;
+        height: s.$image_pokemon_size;
+        width: s.$image_pokemon_size;
         
         
     }
     &-img:hover {
-        animation-name: slideimg;
-        animation-duration: 1s;
-        animation-timing-function: ease-in-out;
         animation-delay: 0s;
         animation-direction: alternate;
-        animation-iteration-count: 3s;
+        animation-duration: 1s;
         animation-fill-mode: forwards;
+        animation-iteration-count: 3s;
+        animation-name: slideimg;
         animation-play-state: running;
+        animation-timing-function: ease-in-out;
 
     }
 

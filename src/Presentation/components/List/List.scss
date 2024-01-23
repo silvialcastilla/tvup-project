@@ -1,13 +1,13 @@
 @use '../../../StylesVariables/Colors.scss' as c;
-@use '../../../StylesVariables/Sizes.scss' as s;
 @use '../../../StylesVariables/Fonts.scss' as f;
 @use '../../../StylesVariables/Mixins.scss' as m;
+@use '../../../StylesVariables/Sizes.scss' as s;
 
 .list {
-    padding: s.$padding_boxes;
+    align-items: center;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    padding: s.$padding_boxes;
     
 
     &-items {
@@ -18,10 +18,10 @@
         color: white;
         cursor: pointer;
         display: flex;
-        font-size: 20px;
+        font-size: s.$big_size - 5px;
         justify-content: space-between;
-        margin: 10px;
-        padding: 10px;
+        margin: s.$medium_size - 5px;
+        padding: s.$medium_size - 5px;;
         transition:
         background 0.5s  ease-in-out,
         font-size  0.5s  ease-in-out;        
@@ -30,20 +30,20 @@
 
         &-h4{
             padding: 5px!important;
-            margin-left: 30px;
+            margin-left: s.$big_size;
         }
 
         &-p{
             font-family: f.$title_pokemon;
             font-weight: bold;
-            margin-right: 30px;
+            margin-right: s.$big_size;
         }
         
     }
     &-items:hover {
         background: c.$light_green;
         color:  c.$grey-boxes ;
-        font-size: 25px;
+        font-size: s.$big_size - 5px;
     }  
 }
 

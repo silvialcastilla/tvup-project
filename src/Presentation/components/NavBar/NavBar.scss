@@ -6,7 +6,7 @@
     background: c.$gradient_background;
     display: flex;
     justify-content: center;
-    margin: 0px;
+    margin: s.$no_pixel;
 
     &-img{
         margin-top: s.$margin_boxes;

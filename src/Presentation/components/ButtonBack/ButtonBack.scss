@@ -3,19 +3,20 @@
 @use '../../../StylesVariables/Sizes.scss' as s;
 
 .buttonback {
-    border: 0px;
-    background-color: aliceblue;
+    background-color: c.$white_background;
+    border: s.$no_pixel;
+    
     
     &-container {
-        display: flex;
         align-items: center;
-        font-size: 15px;
+        display: flex;
+        font-size: s.$medium_size;
         font-weight: bold;
     }
     
     img{
-        height: 30px;
-        width: 30px;
+        height: s.$big_size;
+        width: s.$big_size;
     }
 }
 

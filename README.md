@@ -23,3 +23,60 @@ Pokémon seleccionado:
 2. Posiciona nombre y listado a la izquierda y la imagen a la derecha.
 3. Proporciona una manera de regresar a la página principal desde la página de
 detalle.
+
+
+El orden de archivos y carpetas es el siguiente: 
+```
+├─ Data
+│   ├─ DataSource
+│   │   └─ PokemonDataSource.ts
+│   └─ Repository
+│       └─ PokemonRepository.ts
+├─ Domain
+│   └─ UseCase
+│       └─ Pokemon
+│           ├─ GetPokemon.ts
+│           └─ GetPokemons.ts
+├─ Assets
+│
+├─ Interfaces
+│        └─ PokemonInterfaces.ts
+├─ index.js
+│
+├─ StylesVariables
+│       ├─ Colors.scss
+│       ├─ Fonts.scss
+│       ├─ Mixins.scss
+│       └─ Sizes.scss
+│
+└─ Presentation
+    └─ View
+        └─ Pokemon
+        │     ├─ List
+        │     │   ├─ PokemonList.scss 
+        │     │   ├─ PokemonList.tsx
+        │     │   └─ ViewModel.ts
+        │     ├─ Detail
+        │     │   ├─ PokemonDetail.scss 
+        │     │   ├─ PokemonDetail.tsx 
+        │     │   └─ ViewModel.ts
+        │     │
+        Components
+            ├─ ButtonBack  
+            │    ├─ ButtonBack.scss
+            │    └─ ButtonBack.tsx
+            ├─ ImagePokemon  
+            │    ├─ ImagePokemon.scss
+            │    └─ ImagePokemon.tsx
+            ├─ List  
+            │    ├─ List.scss
+            │    └─ List.tsx
+            ├─ NavBar  
+            │    ├─ NavBar.scss
+            │    └─ NavBar.tsx
+            └─ TitleWithImage  
+                 ├─ TitleWithImage.scss
+                 └─ TitleWithImage.tsx
+
+
+``` 
